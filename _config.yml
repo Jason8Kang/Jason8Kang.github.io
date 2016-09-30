@@ -18,8 +18,8 @@ url: http://Jason8Kang.github.io
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: /public/img/deer3.png
-favicon: /public/img/deer3.png
+gavatar: /public/img/my portrait.png
+favicon: /public/img/my portrait.png
 
 # google analytics 设置
 #ga:
@@ -32,7 +32,7 @@ favicon: /public/img/deer3.png
 comments :
   provider : duoshuo
   duoshuo :
-    short_name : whaozl
+    short_name : Jason
 
 # 主题设置，自动激活某个标签
 active: book
