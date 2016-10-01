@@ -1,3 +1,14 @@
+---
+layout: "post"
+title: "markdown教程"
+date: "2016-10-01 12:09"
+category: tool
+tags: markdown
+comments: true
+keywords:
+description:
+---
+
 #1.标题
 根据“#”设置标题级别，且*# 和「一级标题」之间建议保留一个字符的空格，这是最标准的 Markdown 写法。*
 ```
