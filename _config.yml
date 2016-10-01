@@ -35,7 +35,7 @@ comments :
     short_name : Jason
 
 # 主题设置，自动激活某个标签
-active: book
+active: tool
 
 # 中文本地化
 locals:
