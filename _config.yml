@@ -24,11 +24,11 @@ favicon: /public/img/my portrait.png
 # google analytics 设置
 #ga:
 #  id: UA-54262064-1
-#  url: whaozl.github.io
+#  url: Jason8Kang.github.io
 
 # disqus 设置
 #disqus:
-#  shortname: whaozl
+#  shortname: Jason
 comments :
   provider : duoshuo
   duoshuo :
