@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "markdown完美支持latex"
+title: "markdown tutorial"
 date: "2016-10-01 12:09"
 category: tool
 tags: markdown
