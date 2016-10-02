@@ -29,33 +29,26 @@ description:
 #2.列表
 【格式】：（*\\-\\+） + 空格 + 内容。
 ```
--  第一项 
--  第二项 
+-  第一项
+-  第二项
 -  第三项
-+  第一项 
-+  第二项 
++  第一项
++  第二项
 +  第三项
-*  第一项 
-*  第二项 
-*  第三项```
--  第一项 
--  第二项 
--  第三项
-+  第一项 
-+  第二项 
-+  第三项
-*  第一项 
-*  第二项 
+*  第一项
+*  第二项
 *  第三项
+```
 
-```
-- 文本1
-- 文本2
-- 文本3
-```
-- 文本1
-- 文本2
-- 文本3
+-  第一项
+-  第二项
+-  第三项
++  第一项
++  第二项
++  第三项
+*  第一项
+*  第二项
+*  第三项
 
 但如果希望有序
 ```
@@ -79,7 +72,8 @@ description:
 添加图片的形式和链接相似，只需在链接的基础上前方加一个！
 ```
 ![我的头像.png](http://upload-images.jianshu.io/upload_images/3078818-45e2d9b3b07fbbf3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![](http://upload-images.jianshu.io/upload_images/3078818-17a8adc31d5a29ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)```
+![](http://upload-images.jianshu.io/upload_images/3078818-17a8adc31d5a29ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```
 效果如下：
 ![埃菲尔铁塔](http://upload-images.jianshu.io/upload_images/3078818-45e2d9b3b07fbbf3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ![my—potrait](http://upload-images.jianshu.io/upload_images/3078818-17a8adc31d5a29ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -87,15 +81,18 @@ description:
 #4.引用
 在我们写作的时候经常需要引用他人的文字，只需要加上`>`
  ```
-> 一盏灯， 一片昏黄； 一简书， 一杯淡茶。 ```
-> 一盏灯， 一片昏黄； 一简书， 一杯淡茶。 
+> 一盏灯， 一片昏黄； 一简书， 一杯淡茶。
+```
+> 一盏灯， 一片昏黄； 一简书， 一杯淡茶。
 
 ```
 > 区块引用(区块在书写markdown时下方还要空1行) 
 >> 嵌套引用
 ```
+
 > 区块引用(区块在书写markdown时下方还要空1行) 
 >> 嵌套引用
+>
 *注：需要和普通段落间存在空行，否则连续引用*
 
 #5.粗体和斜体
@@ -104,7 +101,8 @@ description:
 ```
 *斜体*，_斜体_ 
 **粗体**，__粗体__
-~~删除线~~```
+~~删除线~~
+```
 
 *一盏灯*， 一片昏黄；
 **一简书**， 一杯淡茶。
@@ -112,9 +110,10 @@ description:
 
 #6.代码引用
 代码区块的建立是在每行加上**4个空格**或者**一个制表符**（如同写代码一样），最佳办法是写```，切记要和上一个普通段落之间**存在空行**。
-    
+
     博客也有不错的流量，也没少参与CSDN举办的活动，获得了几本过时的技术书，但是仍感觉不爽，最痛苦的就是编辑，CSDN的在线编辑器做的不咋地，不太好用，而且经常写着写着就不动了，再刷新就啥都没了，
-需要引用代码时，如果引用的语句只有一段，不分行，可以用` 将语句包起来。如果引用的语句为多行，可以将```置于这段代码的首行和末行。
+
+    需要引用代码时，如果引用的语句只有一段，不分行，可以用` 将语句包起来。如果引用的语句为多行，可以将```置于这段代码的首行和末行。
 
 \`hello world\`
 `hello world`
@@ -142,11 +141,6 @@ print a
 | col 2 is | centered | $12 |
 | zebra stripes | are neat | $1 |
 *注：实际上两个Tab键也是代码区块*
-#8.显示链接中带括号的图片
-![][1]
-[1]: http://latex.codecogs.com/gif.latex?\prod%20\(n_{i}\)+1
-
-![我的头像.png](http://upload-images.jianshu.io/upload_images/3078818-c2c5a720c0f91a92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #8.分割线
 分割线
@@ -173,7 +167,7 @@ $$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 ###公式
 #####分割线
 
-#12.流程图 
+#12.流程图
   ```flow
 st=>start: Start
 e=>end: End
@@ -201,6 +195,6 @@ Bob-->Alice: I am good thanks!
 ##总结
 1. 最初只需要记住 # 标题一、## 标题二、1. 第一点、* 这一点，用这几个写写日志、需求文档、小文章，排版上足够了；
 2. 逐渐的你发现有些文字需要重点指出，那么还可以使用 **加粗**
-、*斜体* 来对文字做重点说明；
+、*斜体* 来对m文字做重点说明；
 3. 果你是名程序员，那么可以用 ``` 把代码块包起来，渲染后可以关键字高亮，用 > 可以做引用 ；
 4. 学生的话，就去了解一下 LaTex 吧，为知笔记 Markdown 支持 Mathjax 公式渲染哦~
