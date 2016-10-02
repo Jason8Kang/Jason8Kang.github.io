@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "markdown教程"
+title: "markdown tutorial"
 date: "2016-10-01 12:09"
 category: tool
 tags: markdown
