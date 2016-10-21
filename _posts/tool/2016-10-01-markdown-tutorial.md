@@ -110,7 +110,7 @@ description:
 ```
 
 > 区块引用(区块在书写markdown时下方还要空1行) 
->> 嵌套引用
+>>嵌套引用
 
 *注：需要和普通段落间存在空行，否则连续引用*
 
@@ -168,6 +168,7 @@ print a
 | col 3 is | right-aligned | $1600 |
 | col 2 is | centered | $12 |
 | zebra stripes | are neat | $1 |
+
 *注：实际上两个Tab键也是代码区块*
 
 # 8.分割线
