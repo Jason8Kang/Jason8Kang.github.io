@@ -1,12 +1,12 @@
 ---
 layout: "post"
-title: "windows上安装linux"
-date: "2016-10-21 12:09"
+title: "markdown tutorial"
+date: "2016-10-01 12:09"
 category: tool
 tags: markdown
 comments: true
 keywords:
-description:win10终于升级，将linux作为子系统，当前仅存在ubuntu系统.
+description:
 ---
 
 如何在win10上运行linux(ubuntu14.0)?
