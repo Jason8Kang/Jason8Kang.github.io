@@ -3,7 +3,7 @@ layout: "post"
 title: "windows上运行linux"
 date: "2016-10-21 12:09"
 category: tool
-tags: ubuntu
+tags: markdown
 comments: true
 keywords:
 description:win10终于升级，将linux作为子系统，当前仅存在ubuntu系统.
