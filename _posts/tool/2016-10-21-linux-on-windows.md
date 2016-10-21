@@ -3,7 +3,7 @@ layout: post
 title: "linux on windows"
 date: "2016-10-21 12:09"
 category: tool
-tags: markdown
+tags: ubuntu
 comments: true
 keywords:
 description:
