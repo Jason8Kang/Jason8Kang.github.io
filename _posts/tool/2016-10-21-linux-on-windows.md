@@ -45,5 +45,6 @@ ls /mnt
 
 还可以在两个系统内相互调用命令。
 
-更多官网教程关注：https://msdn.microsoft.com/en-us/commandline/wsl/about
-how-to-geek中的教程：http://www.howtogeek.com/265900/everything-you-can-do-with-windows-10s-new-bash-shell/
+更多官网教程关注：
+- https://msdn.microsoft.com/en-us/commandline/wsl/about
+- how-to-geek中的教程：http://www.howtogeek.com/265900/everything-you-can-do-with-windows-10s-new-bash-shell/
