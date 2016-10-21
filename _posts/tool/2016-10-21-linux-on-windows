@@ -1,12 +1,13 @@
 ---
 layout: "post"
-title: "windows on linux"
+title: "windows上安装linux"
 date: "2016-10-21 12:09"
 category: tool
-tags: ubuntu
+tags: markdown
 comments: true
 keywords:
-description:
+description:win10终于升级，将linux作为子系统，当前仅存在ubuntu系统.
+
 ---
 
 如何在win10上运行linux(ubuntu14.0)?
