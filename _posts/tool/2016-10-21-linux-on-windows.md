@@ -9,17 +9,21 @@ keywords:
 description:
 ---
 
-如何在win10上运行linux(ubuntu14.0)?
+# 如何在win10上运行linux(ubuntu14.0)?
 
 > 控制面板>程序>启用或关闭windows功能>
 
 ![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3078818-6462e4c69e5887be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 在命令提示符或 *PowerShell* 中输入 *bash*，或者在开始菜单中查找打开*Bash on Ubuntu on Windows*，即可运行。
 运行之后，可以发现使用的是 Ubuntu 14.04.4 LTS 版本，同时也可以使用 apt-get 更新或安装程序，如下图所示。此外。在 bash 当中，Windows 的分区被挂载于 **/mnt** 目录，可以使用其中存储的数据。
 
 ![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3078818-df766db7dca6f4a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-##命令参考
+
+## 命令参考
+
 有两个命令 `bash.exe` 和 `lxrun.exe` 用于和 Windows Subsystem for Linux (WSL)进行交互。它们安装在 \Windows\System32 目录下，可以在命令行或 Powershell 中运行。
+
 - bash.exe 启动 bash 环境并运行 /bin/bash
 - lxrun.exe 用于管理 WSL，可以用来安装或卸载 Ubuntu 镜像
 
