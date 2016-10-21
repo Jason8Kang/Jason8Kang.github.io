@@ -197,7 +197,8 @@ $$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 ###公式
 #####分割线
 
-#12.流程图
+# 12.流程图
+
   ```flow
 st=>start: Start
 e=>end: End
@@ -208,23 +209,27 @@ io=>inputoutput: catch something...
 st->op1->cond
 cond(yes)->io->e
 cond(no)->sub1(right)->op1
-```                           
-   注意：
-1. 关键词（start、end、operation、subroutine、condition和inputoutput）后的冒号后要紧跟一个空格。
-2. 使用->来连接两个元素，对于condition类型，有yes和no两个分支，如示例中的cond(yes)和cond(no)。
+```
+
+注意：
+- 1. 关键词（start、end、operation、subroutine、condition和inputoutput）后的冒号后要紧跟一个空格。
+- 2. 使用->来连接两个元素，对于condition类型，有yes和no两个分支，如示例中的cond(yes)和cond(no)。
 
 更多关于流程图的语法说明：http://adrai.github.io/flowchart.js/
-#13. 时序图
+# 13. 时序图
+
 ```sequence
 Alice->Bob: Hello Bob, how are you?
 Note right of Bob: Bob thinks
 Bob-->Alice: I am good thanks!
 ```
+
 更多关于时序图的语法说明：[http://bramp.github.io/js-sequence-diagrams/](http://bramp.github.io/js-sequence-diagrams/)
  
 ##总结
-1. 最初只需要记住 # 标题一、## 标题二、1. 第一点、* 这一点，用这几个写写日志、需求文档、小文章，排版上足够了；
-2. 逐渐的你发现有些文字需要重点指出，那么还可以使用 **加粗**
+
+ 1. 最初只需要记住 # 标题一、## 标题二、1. 第一点、* 这一点，用这几个写写日志、需求文档、小文章，排版上足够了；
+ 2. 逐渐的你发现有些文字需要重点指出，那么还可以使用 **加粗**
 、*斜体* 来对m文字做重点说明；
-3. 果你是名程序员，那么可以用 ``` 把代码块包起来，渲染后可以关键字高亮，用 > 可以做引用 ；
-4. 学生的话，就去了解一下 LaTex 吧，为知笔记 Markdown 支持 Mathjax 公式渲染哦~
+ 3. 果你是名程序员，那么可以用 ``` 把代码块包起来，渲染后可以关键字高亮，用 > 可以做引用 ；
+ 4. 学生的话，就去了解一下 LaTex 吧，为知笔记 Markdown 支持 Mathjax 公式渲染哦~
