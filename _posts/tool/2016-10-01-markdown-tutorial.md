@@ -88,6 +88,7 @@ description:
 ![我的头像.png](http://upload-images.jianshu.io/upload_images/3078818-45e2d9b3b07fbbf3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ![](http://upload-images.jianshu.io/upload_images/3078818-17a8adc31d5a29ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ```
+
 效果如下：
 
 ![埃菲尔铁塔](http://upload-images.jianshu.io/upload_images/3078818-45e2d9b3b07fbbf3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -96,9 +97,11 @@ description:
 
 # 4.引用
 在我们写作的时候经常需要引用他人的文字，只需要加上`>`
+
  ```
 > 一盏灯， 一片昏黄； 一简书， 一杯淡茶。
 ```
+
 > 一盏灯， 一片昏黄； 一简书， 一杯淡茶。
 
 ```
@@ -108,15 +111,16 @@ description:
 
 > 区块引用(区块在书写markdown时下方还要空1行) 
 >> 嵌套引用
->
+
 *注：需要和普通段落间存在空行，否则连续引用*
 
 # 5.粗体和斜体
-
 在强调内容两侧分别加上*或者_,，写法如下。
 ```
 *斜体*，_斜体_ 
+
 **粗体**，__粗体__
+
 ~~删除线~~
 ```
 
