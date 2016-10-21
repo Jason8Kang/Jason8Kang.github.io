@@ -20,6 +20,7 @@ description:
 #### 四级标题
 ##### 五级标题
 ###### 六级标题
+
 ```
 
 # 一级标题
@@ -226,7 +227,7 @@ Bob-->Alice: I am good thanks!
 
 更多关于时序图的语法说明：[http://bramp.github.io/js-sequence-diagrams/](http://bramp.github.io/js-sequence-diagrams/)
  
-##总结
+## 总结
 
  1. 最初只需要记住 # 标题一、## 标题二、1. 第一点、* 这一点，用这几个写写日志、需求文档、小文章，排版上足够了；
  2. 逐渐的你发现有些文字需要重点指出，那么还可以使用 **加粗**
