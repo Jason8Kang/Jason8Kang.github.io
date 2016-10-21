@@ -73,10 +73,9 @@ description:
 # 3.插入链接和图片
 
 插入链接不需要其他按钮，你只需要使用 
-```
-[显示文本](链接地址)。如
-[简书](http://www.jianshu.com)
-```
+`
+[显示文本](链接地址)。如[简书](http://www.jianshu.com)
+`
 [简书](http://www.jianshu.com)
 
 添加图片的形式和链接相似，只需在链接的基础上前方加一个！
@@ -85,7 +84,9 @@ description:
 ![](http://upload-images.jianshu.io/upload_images/3078818-17a8adc31d5a29ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ```
 效果如下：
+
 ![埃菲尔铁塔](http://upload-images.jianshu.io/upload_images/3078818-45e2d9b3b07fbbf3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ![my—potrait](http://upload-images.jianshu.io/upload_images/3078818-17a8adc31d5a29ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 # 4.引用
@@ -126,19 +127,24 @@ description:
     需要引用代码时，如果引用的语句只有一段，不分行，可以用` 将语句包起来。如果引用的语句为多行，可以将```置于这段代码的首行和末行。
 
 \`hello world\`
+
 `hello world`
+
 \``
 abc
 bcd
 \``
+
 ``
 abc
 bcd
 ``
+
 \```
 a=1
 print a
 \```
+
 ```
 a=1
 print a
@@ -158,22 +164,27 @@ print a
 分割线1
 ***
 分割线2
-___github
+___  
+以上是分割线
 
-#9反斜杠\
+# 9反斜杠\
 【格式】相当于**反转义**作用。使符号成为普通符号
 
-#10.公式
+# 10.公式
+
 latex公式
+
 $$ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} $$
-Mathjax公式
-可以创建行内公式，例如：
-$\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
+
+Mathjax公式可以创建行内公式，例如：$\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
 或者块级公式，
+
 $$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
-#11. 目录
+# 11. 目录
+
 [TOC]
+
 ###公式
 #####分割线
 
