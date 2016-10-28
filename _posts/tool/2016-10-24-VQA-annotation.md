@@ -153,7 +153,10 @@ what color is the animal by the dog?
 ![](/public/img/10/24/6.png)
 ![](/public/img/10/24/7.png)
 ![](/public/img/10/24/8.png)
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 8704230... Revert "10-28"
 In this paper, $s_rf$ is chosen as 3 for the convolution process. The
 input of the first convolution layer for the sentence CNN is the word embeddings of the question:
 ![](/public/img/10/24/9.png)
