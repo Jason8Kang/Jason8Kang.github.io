@@ -32,9 +32,128 @@ ImageNet 已经成为全球最大的图像识别数据库，每年一度的比�
 
 ![标签](/public/img/10/24/1.png)
 
+
 根据官网说明，VQA的问题主要如下。
 
 ![问题分类](/public/img/10/24/2.png)
-
+![问题类型](/public/img/10/24/3.png)
 但考虑到决赛需要限制问题的开放性，暂定将问题限制于动物的种类，颜色，动物的相对位置，动物的数量。
 现在我们需要基于CNN的智能问答效果。
+
+>Train a deeper LSTM and normalized CNN Visual Question Answering model. This current code can get 58.16 on Open-Ended and 63.09 on Multiple-Choice on test-standard split
+
+>only considers questions whose answers come from a predefined closed world of 16 basic colors or 894 object categories. also considers questions generated from templates from a fixed vocabulary of objects, attributes, relationships between objects, etc. In contrast, our proposed task involves open-ended, free-form questions and answers provided by humans.
+
+>Baselines
+We implemented the following baselines:
+1) random: We randomly choose an answer from the top
+1K answers of the VQA train/val dataset.
+2) prior (“yes”): We always select the most popular answer
+(“yes”) for both the open-ended and multiple-choice
+tasks. Note that “yes” is always one of the choices for
+the multiple-choice questions.
+3) per Q-type prior: For the open-ended task, we pick the
+most popular answer per question type (see the appendix
+for details). For the multiple-choice task, we pick the
+answer (from the provided choices) that is most similar
+to the picked answer for the open-ended task using cosine
+similarity in Word2Vec[37] feature space.
+4) nearest neighbor: Given a test image, question pair, we
+first find the K nearest neighbor questions and associated
+images from the training set. See appendix for details on
+how neighbors are found. Next, for the open-ended task,
+we pick the most frequent ground truth answer from this
+set of nearest neighbor question, image pairs. Similar to
+the “per Q-type prior” baseline, for the multiple-choice
+task, we pick the answer (from the provided choices) that
+is most similar to the picked answer for the open-ended
+task using cosine similarity in
+Word2Vec[37] feature space.
+
+Question Channel: This channel provides an embedding for
+the question. We experiment with three embeddings –
+1) Bag-of-Words Question (BoW Q): The top 1,000 words
+in the questions are used to create a bag-of-words representation.Since there is a strong correlation between the
+words that start a question and the answer (see Fig. 5),
+we find the top 10 first, second, and third words ofthe questions and create a 30 dimensional bag-of-words
+representation. These features are concatenated to get a
+1,030-dim embedding for the question.
+2) LSTM Q: An LSTM with one hidden layer is used
+to obtain 1024-dim embedding for the question. Each
+question word is encoded with 300-dim embedding by a
+fully-connected layer + tanh non-linearity which is then
+fed to the LSTM. The input vocabulary to the embedding
+layer consists of all the question words seen in the
+training dataset.
+3) deeper LSTM Q: An LSTM with two hidden layers
+is used to obtain 2048-dim embedding for the question,
+followed by a fully-connected layer + tanh non-linearity
+to transform 2048-dim embedding to 1024-dim. The
+question words are encoded in the same way as in LSTM
+Q.
+
+##Basic Statistics
+Total images: 108,077
+Average image size (px): 500.14
+Maximum image size (px): 1,280
+Minimum image size (px): 72
+Total region descriptions: 4,297,502
+Total image object instances: 1,366,673
+Unique image objects: 75,729
+Total object-object relationship instances: 1,531,448
+Unique relationships: 40,480
+Total attribute-object instances: 1,670,182
+Unique attributes: 40,513
+Total Scene Graphs: 108,249
+Total Region Graphs: 3,788,715
+Total Question Answers: 1,773,258
+
+###Common Statistics
+|   |Average number of objects|	Average number of relationships|	Average number of attributes|
+|--|-------|----------|----------|
+||Per region annotation|1.01	|0.63|	0.77|
+||Per image|	21.24	|17.68	|16.08|
+
+**objects**:man,person,woman,sign,building,table,bus,window,sky,tree,ground,light,grass,cloud,pole,car,leaf,hand,leg,head,water,hair,
+**Relationship**:,on,has,in,WEARING,wears,behind,next to,with,near,in front of,parked,,
+**Attribute**:white,blue,red,black,green,yellow,brown,large,wooden,gray,silver,orange,metal,greay,tall,pink
+
+### type of question：
+
+~~yes/no
+is/are/does the
+is there~~
+
+#### the object
+what kind animals are in the picture?
+
+
+#### the relationship
+where is the object
+
+#### the atrribute
+what color is the object?
+which is the biggest one?
+
+#### how many
+how many objects ?
+
+#### compound
+what color is the animal by the dog?
+
+### why
+### what does
+
+![](/public/img/10/24/4.png)
+![](/public/img/10/24/5.png)
+
+###Learning to Answer Questions from Image Using Convolutional Neural Network
+论文摘要，模型，结论的在线说明网站：http://conviqa.noahlab.com.hk/project.html
+
+![](/public/img/10/24/6.png)
+![](/public/img/10/24/7.png)
+![](/public/img/10/24/8.png)
+
+In this paper, $s_rf$ is chosen as 3 for the convolution process. The
+input of the first convolution layer for the sentence CNN is the word embeddings of the question:
+![](/public/img/10/24/9.png)
