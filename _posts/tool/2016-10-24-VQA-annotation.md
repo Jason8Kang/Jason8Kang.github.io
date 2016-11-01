@@ -114,36 +114,6 @@ Total Question Answers: 1,773,258
 ||Per region annotation|1.01	|0.63|	0.77|
 ||Per image|	21.24	|17.68	|16.08|
 
-**objects**:man,person,woman,sign,building,table,bus,window,sky,tree,ground,light,grass,cloud,pole,car,leaf,hand,leg,head,water,hair,
-**Relationship**:,on,has,in,WEARING,wears,behind,next to,with,near,in front of,parked,,
-**Attribute**:white,blue,red,black,green,yellow,brown,large,wooden,gray,silver,orange,metal,greay,tall,pink
-
-### type of question：
-
-~~yes/no
-is/are/does the
-is there~~
-
-#### the object
-what kind animals are in the picture?
-
-
-#### the relationship
-where is the object
-
-#### the atrribute
-what color is the object?
-which is the biggest one?
-
-#### how many
-how many objects ?
-
-#### compound
-what color is the animal by the dog?
-
-### why
-### what does
-
 ![](/public/img/10/24/4.png)
 ![](/public/img/10/24/5.png)
 
@@ -157,3 +127,29 @@ what color is the animal by the dog?
 In this paper, $s_rf$ is chosen as 3 for the convolution process. The
 input of the first convolution layer for the sentence CNN is the word embeddings of the question:
 ![](/public/img/10/24/9.png)
+
+---
+
+**对象**：天竺鼠，松鼠，梅花鹿，狐狸，狗，狼，猫，花栗鼠，长颈鹿，驯鹿，鬣狗，黄鼠狼，人，画，草坪，树，帽子，布偶。（总共18种对象）
+**位置关系**：上边，下边，左边，右边，旁边
+**属性**：白，黑，橙，棕
+
+分析：在[cloudCV](http://objdetect.cloudcv.org/vqa/)上，运用Deeper LSTM+ normalized CNN，代码见[here](https://github.com/VT-vision-lab/VQA_LSTM_CNN)
+得到结果如下：
+![](/public/img/10/24/10.png)
+由此可以看出数量的准确率在30%-40%，具体可参考[here](http://www.visualqa.org/roe.html).
+
+![color](/public/img/10/28/1.png)
+![color](/public/img/10/28/2.png)
+![color](/public/img/10/28/3.png)
+![color](/public/img/10/28/4.png)
+
+### 问题类型
+类型1：动物类型 20%
+图片中有什么动物？
+类型2：动物数量 20%
+图片中有几只动物？
+图中黑色的狗有几条？
+类型3：简单颜色属性或者位置关系 60%
+猫在哪里？
+图中的猫是什么颜色？
