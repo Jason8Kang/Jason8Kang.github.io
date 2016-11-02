@@ -1,7 +1,7 @@
 ---
 layout: "CNN annotation"
 date: "2016-10-26 12:09"
-category: tool
+category: CV
 tags: CNN
 comments: true
 keywords:
