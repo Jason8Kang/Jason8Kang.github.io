@@ -27,22 +27,22 @@
 ###jason修改部分
 一个典型博客的基础目录结构：
 >|-- _config.yml
-|-- index.html
-|-- _includes
-|-- _layouts
-|   |-- default.html
-|   |-- post.html
-|-- css
-|-- js
-|-- _posts
-|   |-- 2015-04-27-Like-Kissing.md
-|-- images
-|   |-- Leah.png
-|-- CNAME
-|-- _404.html
-|-- About.md
-|-- feed.xml
-|-- README.md
+>|-- index.html
+>|-- _includes
+>|-- _layouts
+>|   |-- default.html
+>|   |-- post.html
+>|-- css
+>|-- js
+>|-- _posts
+>|   |-- 2015-04-27-Like-Kissing.md
+>|-- images
+>|   |-- Leah.png
+>|-- CNAME
+>|-- _404.html
+>|-- About.md
+>|-- feed.xml
+>|-- README.md
 
 #####Description of The Catalog Document
 目录文档详细说明。如下：
@@ -82,17 +82,24 @@ CNAME 文件，如果有独立域名请修改该文件；如果没有，则删�
 
 ---
 layout: "post"
+
 title: "test"
+
 date: "2016-09-30 12:09"
+
 category: tool
+
 tags: markdown
+
 comments: true
+
 keywords:
+
 description:
 ---
 
-layout不用改；
-title 一项是必须添加的；
-categories 目录可以换，但如果不是要多重分类，这篇归档在 Blog 目录下；
-Tags 可以自己按照文章主题添加，也可以不加，不同的 Tags 直接用英文逗号加半角空格间隔开；
-description 博文概述，一句话概述，一般添加会好些。
+1. layout不用改；
+1. title 一项是必须添加的；
+1. categories 目录可以换，但如果不是要多重分类，这篇归档在 Blog 目录下；
+1. Tags 可以自己按照文章主题添加，也可以不加，不同的 Tags 直接用英文逗号加半角空格间隔开；
+1. description 博文概述，一句话概述，一般添加会好些。
