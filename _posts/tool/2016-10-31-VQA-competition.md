@@ -2,7 +2,7 @@
 layout: "post"
 title: "VQA exercise"
 date: "2016-10-24 12:09"
-category: tool
+category: CV
 tags: VQA
 comments: true
 keywords:
