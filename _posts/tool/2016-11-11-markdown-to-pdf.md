@@ -9,7 +9,7 @@ keywords:
 description:
 ---
 
-## Atom编写md文档并转为pdf（转自[here](http://www.joomla178.com/joomla-share/front-end/649-edit-md-files-by-atom-transfer-to-pdf.html)）
+## 1. Atom编写md文档并转为pdf（转自[here](http://www.joomla178.com/joomla-share/front-end/649-edit-md-files-by-atom-transfer-to-pdf.html)）
 
 #### 安装插件
 
@@ -46,14 +46,14 @@ cd C:\Users\yourname\.atom\packages\markdown-themeable-pdf-master
 
 更多问题关注[官网](：https://github.com/cakebake/markdown-themeable-pdf)
 
-## 为知笔记插件---笔记导出为pdf插件
+## 2. 为知笔记插件---笔记导出为pdf插件
 下载地址：http://app.wiz.cn/
 其他格式的导入导出可以具体做法可以参考：http://test.smzdm.com/pingce/p/1850/
 安装插件后，找到右上角的设置三角按钮，点击`设置>文件>制作pdf`
 
 ![mark](http://ofqh7nchg.bkt.clouddn.com/blog/20161101/225221695.png)
 
-##利用chrome浏览器
+## 3. 利用chrome浏览器
 
 首先安装插件 `markdown preview`使chrome浏览器可以预览markdown效果，然后点打印，目标，选本地另存为pdf即可。看图：
 ![mark](http://ofqh7nchg.bkt.clouddn.com/blog/20161101/225826996.png)

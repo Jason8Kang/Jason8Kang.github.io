@@ -111,13 +111,15 @@ Total Scene Graphs: 108,249
 Total Region Graphs: 3,788,715
 Total Question Answers: 1,773,258
 
-###Common Statistics
+### Common Statistics
+
 |   |Average number of objects|	Average number of relationships|	Average number of attributes|
 |--|-------|----------|----------|
 |Per region annotation|1.01	|0.63|	0.77|
 |Per image|	21.24	|17.68	|16.08|
 
 ![](/public/img/10/24/4.png)
+
 ![](/public/img/10/24/5.png)
 
 ###Learning to Answer Questions from Image Using Convolutional Neural Network
