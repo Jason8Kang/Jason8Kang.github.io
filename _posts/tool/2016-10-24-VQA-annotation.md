@@ -32,7 +32,6 @@ ImageNet 已经成为全球最大的图像识别数据库，每年一度的比�
 
 ![标签](/public/img/10/24/1.png)
 
-
 根据官网说明，VQA的问题主要如下。
 
 ![问题分类](/public/img/10/24/2.png)
@@ -131,12 +130,16 @@ input of the first convolution layer for the sentence CNN is the word embeddings
 ---
 
 **对象**：天竺鼠，松鼠，梅花鹿，狐狸，狗，狼，猫，花栗鼠，长颈鹿，驯鹿，鬣狗，黄鼠狼，人，画，草坪，树，帽子，布偶。（总共18种对象）
+
 **位置关系**：上边，下边，左边，右边，旁边
+
 **属性**：白，黑，橙，棕
 
 分析：在[cloudCV](http://objdetect.cloudcv.org/vqa/)上，运用Deeper LSTM+ normalized CNN，代码见[here](https://github.com/VT-vision-lab/VQA_LSTM_CNN)
 得到结果如下：
+
 ![](/public/img/10/24/10.png)
+
 由此可以看出数量的准确率在30%-40%，具体可参考[here](http://www.visualqa.org/roe.html).
 
 ![color](/public/img/10/28/1.png)
@@ -145,11 +148,14 @@ input of the first convolution layer for the sentence CNN is the word embeddings
 ![color](/public/img/10/28/4.png)
 
 ### 问题类型
-类型1：动物类型 20%
+
+####类型1：动物类型 20%
 图片中有什么动物？
-类型2：动物数量 20%
+
+####类型2：动物数量 20%
 图片中有几只动物？
 图中黑色的狗有几条？
-类型3：简单颜色属性或者位置关系 60%
+
+####类型3：简单颜色属性或者位置关系 60%
 猫在哪里？
 图中的猫是什么颜色？
