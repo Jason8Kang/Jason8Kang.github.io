@@ -13,10 +13,14 @@ description:
 
 参考https://github.com/gwding/draw_convnet
 只需两步，`git clone`和`python draw_convert.py`
+
 ![mark](http://ofqh7nchg.bkt.clouddn.com/blog/20161113/123219972.png)
-有人还基于此进行改进：支持任意长宽比例的kernel和feature map，支持更深的网络结构
-https://github.com/HugoFeng/draw_convnet
-效果图：![mark](http://ofqh7nchg.bkt.clouddn.com/blog/20161113/150016999.png)
+
+有人还基于此进行改进：支持任意长宽比例的kernel和feature map，支持更深的网络结构：
+https://github.com/HugoFeng/draw_convnet。
+效果图：
+
+![mark](http://ofqh7nchg.bkt.clouddn.com/blog/20161113/150016999.png)
 
 ### 2.利用graphviz
 
@@ -132,6 +136,7 @@ digraph G {
 ```
 
 效果图：
+
 ![mark](http://ofqh7nchg.bkt.clouddn.com/blog/20161113/123110753.png)
 
 ### 3.利用caffe，mxnet
@@ -140,13 +145,8 @@ digraph G {
 
 以下是贾扬清大神的回答：
 >说真的，试一下powerpoint，很好使的。
-
 如果你用Mac的话，keynote免费。
-
 如果你能翻墙，Google docs也免费。
-
 以上三个基本上是大众画图神器。记得导出成矢量PDF，然后就到处可以用了，包括pdflatex。
-
 如果你想小众一点，GoogleNet那个图我是用pydot+graphviz画的，但是这些东西需要手调的地方多一些。
-
 如果你要剑走偏锋一点，2010年的CVPR上Marc Aurelio Ranzato有一个全手绘的poster，想来当年参会的人都会有点印象吧。
