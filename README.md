@@ -56,6 +56,19 @@
 - _posts 博客正文存放的文件夹。命名有规定，必须为「日期 + 标题」的模式，即「2015-04-27-Like-Kissing.md」，才能发布到博客里；
 - images 图片文件夹，存放博客相关素材，包括博客 favicon、博主头像等图片及博文贴图素材；（本文对图片处理参考[MPic-图床神器](https://suoyo.github.io/2016/08/29/Use-QiNiu/)和[七牛](https://portal.qiniu.com/)）
 _七牛免费账户有10GB的存储空间，每月10GB的HTTP国内下载流量、10GB的HTTP海外下载流量、100万次GET请求和10万次PUT请求，一般用户足够使用了。_
+- 在header.html中加入
+```
+<!--支持百度统计------------------------>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a0e95d0eb99f7e71487d982d2cfda23f";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+```
+此js代码需从百度统计的**新版统计代码获取**
 - CNAME 用于绑定个人域名的文档；
 - 404.html 「404 Not Found.」站点链接无法访问时的提示页面。
 - About.html 博客中的个人说明文档（About Me），以 html、md 格式为主；
