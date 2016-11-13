@@ -8,14 +8,18 @@ comments: true
 keywords:
 description:
 ---
+
 ### 1.利用python
+
 参考https://github.com/gwding/draw_convnet
 只需两步，`git clone`和`python draw_convert.py`
 ![mark](http://ofqh7nchg.bkt.clouddn.com/blog/20161113/123219972.png)
 有人还基于此进行改进：支持任意长宽比例的kernel和feature map，支持更深的网络结构
 https://github.com/HugoFeng/draw_convnet
 效果图：![mark](http://ofqh7nchg.bkt.clouddn.com/blog/20161113/150016999.png)
+
 ### 2.利用graphviz
+
 ```
 digraph G {
 
@@ -131,7 +135,9 @@ digraph G {
 ![mark](http://ofqh7nchg.bkt.clouddn.com/blog/20161113/123110753.png)
 
 ### 3.利用caffe，mxnet
+
 ### 4.利用ppt，visio工具
+
 以下是贾扬清大神的回答：
 >说真的，试一下powerpoint，很好使的。
 
