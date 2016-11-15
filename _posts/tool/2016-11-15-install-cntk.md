@@ -9,9 +9,6 @@ keywords:
 description:
 ---
 # cntk安装
-
-标签（空格分隔）： cntk
-
 ---
 
 参考[官网](https://github.com/Microsoft/CNTK/wiki)
