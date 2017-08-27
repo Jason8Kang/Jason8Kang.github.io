@@ -9,4 +9,4 @@ keywords:
 description:
 ---
 
-refer to ![my notebook](http://nbviewer.jupyter.org/github/Jason8Kang/python/tree/master/regular%20expression/)
+refer to [my notebook](http://nbviewer.jupyter.org/github/Jason8Kang/python/tree/master/regular%20expression/)
