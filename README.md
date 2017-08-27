@@ -44,7 +44,8 @@
 >|-- feed.xml
 >|-- README.md
 
-#####Description of The Catalog Document
+##### Description of The Catalog Document
+
 目录文档详细说明。如下：
 
 - _config.yml 博客配置文档（包括博客标题、favicon、博主 ID、头像、描述、联系方式等基本信息都在这个文档添加或修改）；
@@ -76,7 +77,8 @@ var _hmt = _hmt || [];
 - README.md 项目说明文档。用于 Github 个人项目主页的说明（描述）。
 - 除此之外，还有诸如 fonts 文件夹，存放博客用的字体文件，或有主题是将 css/js/fonts/images 等文件夹合并到 _assets 为名的主文件夹中。404.html/feed.xml/CNAME 文件并非必须，但一般架构完整的博客都有。
 
-####Custom Configuration
+#### Custom Configuration
+
 自定义修改中，涉及到修改的文档包括：
 
 _config.yml
