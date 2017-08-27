@@ -6,7 +6,7 @@ category: python
 tags: regular expression
 comments: true
 keywords:
-description:正则表达式联系
+description:
 ---
 
 ### 1.利用python
