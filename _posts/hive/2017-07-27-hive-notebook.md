@@ -9,3 +9,4 @@ comments: true
 
 ### hive参考资源
 
+ - https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF
